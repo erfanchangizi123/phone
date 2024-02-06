@@ -1,1 +1,17 @@
-helll
+names = []
+phone_numbers = []
+num = 1
+
+for i in range(num):
+    name = input("Name: ")
+    phone_number = input("Phone Number: ") 
+    if len(phone_number)==4 and phone_number.isdigit():
+             names.append(name)
+             phone_numbers.append(phone_number)
+    else:
+        print('invalid input!')
+        raise ValueError("Eroor")
+        
+
+for i in range(num):
+    print("Name:\t\t{}\t\nPhone Number:\t{}".format(names[i], phone_numbers[i]))
